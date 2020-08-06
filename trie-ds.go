@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //WordDictionary ...
 type WordDictionary struct {
 	root *Node
@@ -61,10 +59,10 @@ func (wd *WordDictionary) Search(word string) (*Node, bool) {
  * obj.AddWord(word);
  * param_2 := obj.Search(word);
  */
-func main() {
-	obj := Constructor()
-	obj.AddWord("oyooyooyo")
-	fmt.Printf("%#v\n", *obj)
-	fmt.Println(obj.Search("oyoo"))
-	fmt.Println(obj.Search("oy"))
-}
+// func main() {
+// 	obj := Constructor()
+// 	obj.AddWord("oyooyooyo")
+// 	fmt.Printf("%#v\n", *obj)
+// 	fmt.Println(obj.Search("oyoo"))
+// 	fmt.Println(obj.Search("oy"))
+// }
