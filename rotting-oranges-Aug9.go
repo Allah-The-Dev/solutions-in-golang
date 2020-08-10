@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 type coordinate struct {
 	x, y int
 }
@@ -71,7 +69,7 @@ func orangesRotting(grid [][]int) int {
 	return -1
 }
 
-func main() {
-	grid := [][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}
-	fmt.Println(orangesRotting(grid))
-}
+// func main() {
+// 	grid := [][]int{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}
+// 	fmt.Println(orangesRotting(grid))
+// }
