@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //TreeNode ...
 type TreeNode struct {
 	Val   int
@@ -45,22 +43,22 @@ func pathSum(root *TreeNode, sum int) int {
 
 }
 
-func main() {
-	bt := &TreeNode{}
-	bt.Val = 10
+// func main() {
+// 	bt := &TreeNode{}
+// 	bt.Val = 10
 
-	bt.Left = &TreeNode{}
-	bt.Left.Val = 5
+// 	bt.Left = &TreeNode{}
+// 	bt.Left.Val = 5
 
-	bt.Right = &TreeNode{}
-	bt.Right.Val = -3
+// 	bt.Right = &TreeNode{}
+// 	bt.Right.Val = -3
 
-	bt.Right.Right = &TreeNode{}
-	bt.Right.Right.Val = 11
+// 	bt.Right.Right = &TreeNode{}
+// 	bt.Right.Right.Val = 11
 
-	bt.Left.Left = &TreeNode{3, &TreeNode{3, nil, nil}, &TreeNode{-2, nil, nil}}
+// 	bt.Left.Left = &TreeNode{3, &TreeNode{3, nil, nil}, &TreeNode{-2, nil, nil}}
 
-	bt.Left.Right = &TreeNode{2, nil, &TreeNode{1, nil, nil}}
+// 	bt.Left.Right = &TreeNode{2, nil, &TreeNode{1, nil, nil}}
 
-	fmt.Printf("%v", pathSum(bt, 8))
-}
+// 	fmt.Printf("%v", pathSum(bt, 8))
+// }
