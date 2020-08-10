@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 /**
  * Definition for a binary tree node.
  * type TreeNode struct {
@@ -109,21 +107,21 @@ func verticalTraversal(root *TreeNode) [][]int {
 	return result
 }
 
-func main() {
-	bt := &TreeNode{}
-	bt.Val = 0
-	bt.Left = &TreeNode{}
-	bt.Left.Val = 8
-	bt.Right = &TreeNode{}
-	bt.Right.Val = 1
+// func main() {
+// 	bt := &TreeNode{}
+// 	bt.Val = 0
+// 	bt.Left = &TreeNode{}
+// 	bt.Left.Val = 8
+// 	bt.Right = &TreeNode{}
+// 	bt.Right.Val = 1
 
-	bt.Right.Left = &TreeNode{}
-	bt.Right.Left.Val = 3
-	bt.Right.Right = &TreeNode{}
-	bt.Right.Right.Val = 2
+// 	bt.Right.Left = &TreeNode{}
+// 	bt.Right.Left.Val = 3
+// 	bt.Right.Right = &TreeNode{}
+// 	bt.Right.Right.Val = 2
 
-	bt.Right.Left.Right = &TreeNode{4, nil, &TreeNode{7, nil, nil}}
+// 	bt.Right.Left.Right = &TreeNode{4, nil, &TreeNode{7, nil, nil}}
 
-	bt.Right.Right.Left = &TreeNode{5, &TreeNode{6, nil, nil}, nil}
-	fmt.Printf("%v", verticalTraversal(bt))
-}
+// 	bt.Right.Right.Left = &TreeNode{5, &TreeNode{6, nil, nil}, nil}
+// 	fmt.Printf("%v", verticalTraversal(bt))
+// }
