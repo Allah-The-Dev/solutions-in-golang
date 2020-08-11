@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"unicode"
 )
 
@@ -40,6 +39,6 @@ func isAlphaNumeric(ch rune) bool {
 	return unicode.IsLetter(ch) || unicode.IsDigit(ch)
 }
 
-func main() {
-	fmt.Println(isPalindrome(".,"))
-}
+// func main() {
+// 	fmt.Println(isPalindrome(".,"))
+// }
