@@ -1,11 +1,10 @@
 package main
 
 import (
-	"fmt"
 	"sort"
 )
 
-func hIndex(citations []int) int {
+func hIndexLinear(citations []int) int {
 
 	sort.Ints(citations)
 	result := 0
@@ -20,6 +19,6 @@ func hIndex(citations []int) int {
 	return result
 }
 
-func main() {
-	fmt.Println(hIndex([]int{0, 1}))
-}
+// func main() {
+// 	fmt.Println(hIndex([]int{0, 1}))
+// }
