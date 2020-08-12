@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"math"
 )
 
@@ -24,6 +23,6 @@ func titleToNumber(s string) int {
 	return columnNo + 1
 }
 
-func main() {
-	fmt.Println(titleToNumber("AAA"))
-}
+// func main() {
+// 	fmt.Println(titleToNumber("AAA"))
+// }
