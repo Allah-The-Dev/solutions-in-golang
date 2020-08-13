@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func hIndexBucketSearch(citations []int) int {
 	bucket := make([]int, len(citations)+1)
 	for _, citation := range citations {
@@ -22,6 +20,6 @@ func hIndexBucketSearch(citations []int) int {
 	return 0
 }
 
-func main() {
-	fmt.Println(hIndexBucketSearch([]int{0, 3, 1, 7, 8}))
-}
+// func main() {
+// 	fmt.Println(hIndexBucketSearch([]int{0, 3, 1, 7, 8}))
+// }
