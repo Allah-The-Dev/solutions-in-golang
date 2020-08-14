@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func getRow(rowIndex int) []int {
 	if rowIndex < 0 {
 		return []int{}
@@ -21,6 +19,6 @@ func getRow(rowIndex int) []int {
 	return targetRow
 }
 
-func main() {
-	fmt.Println(getRow(6))
-}
+// func main() {
+// 	fmt.Println(getRow(6))
+// }

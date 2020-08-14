@@ -13,7 +13,7 @@ type Node struct {
 }
 
 //Constructor ... Initialize your data structure here. */
-func Constructor() *WordDictionary {
+func TrieConstructor() *WordDictionary {
 	return &WordDictionary{
 		root: &Node{
 			parent:   nil,
