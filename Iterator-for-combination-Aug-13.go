@@ -23,6 +23,7 @@ func (ci *CombinationIterator) GetAllCombination(start, length int, txt string) 
 		ci.Queue = append(ci.Queue, txt)
 		return
 	}
+	fmt.Printf("start = %d, length = %d, txt = %s\n", start, len(ci.Characters)-length, txt)
 	for i := start; i <= len(ci.Characters)-length; i++ {
 		txt = txt + string(ci.Characters[i])
 		fmt.Printf("method call is GetAllCombination(%d, %d, %s)\n", i+1, length-1, txt)
@@ -43,18 +44,18 @@ func (ci *CombinationIterator) HasNext() bool {
 	return len(ci.Queue) != 0
 }
 
-func main() {
-	obj := Constructor("abcde", 3)
-	fmt.Println(obj.Next())
-	fmt.Println(obj.HasNext())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.Next())
-	fmt.Println(obj.HasNext())
-}
+// func main() {
+// 	obj := Constructor("abcde", 3)
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.HasNext())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.Next())
+// 	fmt.Println(obj.HasNext())
+// }
