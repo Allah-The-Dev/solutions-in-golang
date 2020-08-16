@@ -31,6 +31,6 @@ func longestPalindrome(s string) int {
 	return result
 }
 
-func main() {
-	fmt.Println(longestPalindrome("abccccdd"))
-}
+// func main() {
+// 	fmt.Println(longestPalindrome("abccccdd"))
+// }
