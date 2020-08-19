@@ -23,6 +23,6 @@ func sort2DArray() {
 	fmt.Println(matrix)
 }
 
-func main() {
-	sort2DArray()
-}
+// func main() {
+// 	sort2DArray()
+// }
