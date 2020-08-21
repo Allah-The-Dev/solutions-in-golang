@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 var result = []int{}
 
 func getNosForI(initialDigit, N, K, currentNo, currentNosLength int) {
@@ -34,6 +32,6 @@ func numsSameConsecDiff(N int, K int) []int {
 	return result
 }
 
-func main() {
-	fmt.Println(numsSameConsecDiff(2, 1))
-}
+// func main() {
+// 	fmt.Println(numsSameConsecDiff(2, 1))
+// }
