@@ -10,8 +10,8 @@ type CombinationIterator struct {
 	Queue      []string
 }
 
-//Constructor ...
-func Constructor(characters string, combinationLength int) CombinationIterator {
+//ConstructorT ...
+func ConstructorT(characters string, combinationLength int) CombinationIterator {
 	combinationIterator := CombinationIterator{[]rune(characters), []string{}}
 	combinationIterator.GetAllCombination(0, combinationLength, "")
 	return combinationIterator

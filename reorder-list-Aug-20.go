@@ -76,9 +76,9 @@ func printList(head *ListNode) {
 	fmt.Println()
 }
 
-func main() {
-	list := &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{5, nil}}}}}
-	fmt.Printf("%d -> ", list.Val)
-	printList(list.Next)
-	reorderList(list)
-}
+// func main() {
+// 	list := &ListNode{1, &ListNode{2, &ListNode{3, &ListNode{4, &ListNode{5, nil}}}}}
+// 	fmt.Printf("%d -> ", list.Val)
+// 	printList(list.Next)
+// 	reorderList(list)
+// }
