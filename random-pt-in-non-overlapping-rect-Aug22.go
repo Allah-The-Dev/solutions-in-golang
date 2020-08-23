@@ -62,13 +62,13 @@ func (sol *Solution) Pick() []int {
  * param_1 := obj.Pick();
  */
 
-func main() {
-	obj := Constructor([][]int{{-2, -2, -1, -1}, {1, 0, 3, 0}})
-	fmt.Printf("total points => %d\n", obj.NumPts)
-	param1 := obj.Pick()
-	fmt.Printf("%#v\n", param1)
-	param1 = obj.Pick()
-	fmt.Printf("%#v\n", param1)
-	param1 = obj.Pick()
-	fmt.Printf("%#v\n", param1)
-}
+// func main() {
+// 	obj := Constructor([][]int{{-2, -2, -1, -1}, {1, 0, 3, 0}})
+// 	fmt.Printf("total points => %d\n", obj.NumPts)
+// 	param1 := obj.Pick()
+// 	fmt.Printf("%#v\n", param1)
+// 	param1 = obj.Pick()
+// 	fmt.Printf("%#v\n", param1)
+// 	param1 = obj.Pick()
+// 	fmt.Printf("%#v\n", param1)
+// }
