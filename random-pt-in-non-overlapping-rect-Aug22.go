@@ -13,8 +13,8 @@ type Solution struct {
 	UsedRand     []bool
 }
 
-//Constructor ...
-func Constructor(rects [][]int) Solution {
+//ConstructorR ...
+func ConstructorR(rects [][]int) Solution {
 	cumSumArr := make([]int, len(rects))
 	totalNumPts := 0
 	for i, rect := range rects {
