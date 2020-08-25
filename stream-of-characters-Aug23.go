@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 	"unicode/utf8"
 )
@@ -60,12 +59,12 @@ func (strChecker *StreamChecker) Query(letter byte) bool {
 	return false
 }
 
-func main() {
-	obj := Constructor([]string{"baa", "aa", "aaaa", "abbbb", "aba"})
-	fmt.Println(obj.Query(byte(97)))
-	fmt.Println(obj.Query(byte(97)))
-	fmt.Println(obj.Query(byte(97)))
-	fmt.Println(obj.Query(byte(100)))
-	fmt.Println(obj.Query(byte(101)))
-	fmt.Println(obj.Query(byte(102)))
-}
+// func main() {
+// 	obj := Constructor([]string{"baa", "aa", "aaaa", "abbbb", "aba"})
+// 	fmt.Println(obj.Query(byte(97)))
+// 	fmt.Println(obj.Query(byte(97)))
+// 	fmt.Println(obj.Query(byte(97)))
+// 	fmt.Println(obj.Query(byte(100)))
+// 	fmt.Println(obj.Query(byte(101)))
+// 	fmt.Println(obj.Query(byte(102)))
+// }
