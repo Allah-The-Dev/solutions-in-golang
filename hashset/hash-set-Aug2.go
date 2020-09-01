@@ -1,4 +1,4 @@
-package main
+package hashset
 
 //MyHashSet ...
 type MyHashSet struct {

@@ -2,7 +2,6 @@ package main
 
 import (
 	"container/list"
-	"fmt"
 )
 
 //TreeNode ...
@@ -40,7 +39,7 @@ func sumOfLeftLeaves(root *TreeNode) int {
 	return leftLeafSum
 }
 
-func main() {
-	tree := &TreeNode{3, &TreeNode{9, nil, nil}, &TreeNode{20, &TreeNode{15, nil, nil}, &TreeNode{7, nil, nil}}}
-	fmt.Println(sumOfLeftLeaves(tree))
-}
+// func main() {
+// 	tree := &TreeNode{3, &TreeNode{9, nil, nil}, &TreeNode{20, &TreeNode{15, nil, nil}, &TreeNode{7, nil, nil}}}
+// 	fmt.Println(sumOfLeftLeaves(tree))
+// }
