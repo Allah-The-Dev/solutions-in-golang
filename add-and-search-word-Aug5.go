@@ -5,10 +5,24 @@ import (
 	"solutions-in-golang/septemberleetcodechallange"
 )
 
-//sep - 1 :largest time
+//sep - 3
 func main() {
-	fmt.Println(septemberleetcodechallange.LargestTimeFromDigits([]int{1, 2, 3, 4}))
+	fmt.Println(septemberleetcodechallange.PartitionLabels("ababcbacadefegdehijhklij"))
 }
+
+// import (
+// 	"fmt"
+// 	"solutions-in-golang/septemberleetcodechallange"
+// )
+
+// func main() {
+// 	fmt.Println(septemberleetcodechallange.RepeatedSubstringPattern("abcabcab"))
+// }
+
+// //sep - 1 :largest time
+// func main() {
+// 	fmt.Println(septemberleetcodechallange.LargestTimeFromDigits([]int{1, 2, 3, 4}))
+// }
 
 // import (
 // 	"fmt"
