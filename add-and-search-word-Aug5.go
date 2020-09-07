@@ -5,10 +5,17 @@ import (
 	"solutions-in-golang/septemberleetcodechallange"
 )
 
-//sep - 3
+// sep - 6
 func main() {
-	fmt.Println(septemberleetcodechallange.PartitionLabels("ababcbacadefegdehijhklij"))
+	A := [][]int{{1, 1, 0}, {0, 1, 0}, {0, 1, 0}}
+	B := [][]int{{0, 0, 0}, {0, 1, 1}, {0, 0, 1}}
+	fmt.Println(septemberleetcodechallange.LargestOverlap(A, B))
 }
+
+// //sep - 3
+// func main() {
+// 	fmt.Println(septemberleetcodechallange.PartitionLabels("ababcbacadefegdehijhklij"))
+// }
 
 // import (
 // 	"fmt"
