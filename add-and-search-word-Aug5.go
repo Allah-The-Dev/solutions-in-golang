@@ -2,15 +2,29 @@ package main
 
 import (
 	"fmt"
+	"solutions-in-golang/model"
 	"solutions-in-golang/septemberleetcodechallange"
 )
 
-// sep - 6
+// sep - 8
 func main() {
-	A := [][]int{{1, 1, 0}, {0, 1, 0}, {0, 1, 0}}
-	B := [][]int{{0, 0, 0}, {0, 1, 1}, {0, 0, 1}}
-	fmt.Println(septemberleetcodechallange.LargestOverlap(A, B))
+	tree := &model.TreeNode{Val: 1}
+	tree.Left = &model.TreeNode{Val: 0, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
+	tree.Right = &model.TreeNode{Val: 1, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
+	fmt.Println(septemberleetcodechallange.SumRootToLeaf(tree))
 }
+
+// sep - 7
+// func main() {
+// 	fmt.Println(septemberleetcodechallange.WordPattern("abba", "dog dog dog dog"))
+// }
+
+// sep - 6
+// func main() {
+// 	A := [][]int{{1, 1, 0}, {0, 1, 0}, {0, 1, 0}}
+// 	B := [][]int{{0, 0, 0}, {0, 1, 1}, {0, 0, 1}}
+// 	fmt.Println(septemberleetcodechallange.LargestOverlap(A, B))
+// }
 
 // //sep - 3
 // func main() {
