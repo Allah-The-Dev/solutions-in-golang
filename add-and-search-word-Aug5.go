@@ -2,17 +2,16 @@ package main
 
 import (
 	"fmt"
-	"solutions-in-golang/model"
-	"solutions-in-golang/septemberleetcodechallange"
+	"solutions-in-golang/augustleetcodechallange"
 )
 
 // sep - 8
-func main() {
-	tree := &model.TreeNode{Val: 1}
-	tree.Left = &model.TreeNode{Val: 0, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
-	tree.Right = &model.TreeNode{Val: 1, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
-	fmt.Println(septemberleetcodechallange.SumRootToLeaf(tree))
-}
+// func main() {
+// 	tree := &model.TreeNode{Val: 1}
+// 	tree.Left = &model.TreeNode{Val: 0, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
+// 	tree.Right = &model.TreeNode{Val: 1, Left: &model.TreeNode{Val: 0}, Right: &model.TreeNode{Val: 1}}
+// 	fmt.Println(septemberleetcodechallange.SumRootToLeaf(tree))
+// }
 
 // sep - 7
 // func main() {
@@ -55,19 +54,23 @@ func main() {
 // 	"solutions-in-golang/addandsearchword"
 // )
 
-// func main() {
-// 	obj := addandsearchword.Constructor()
-// 	obj.AddWord("bca")
-// 	obj.AddWord("mno")
-// 	obj.AddWord("xyz")
-// 	fmt.Println(obj.Search("..a"))
-// 	fmt.Println(obj.Search("..."))
-// 	fmt.Println(obj.Search("x..z"))
-// 	fmt.Println(obj.Search("..p"))
-// 	fmt.Println(obj.Search("mno"))
-// 	obj.AddWord("nntiantzzodd")
-// 	fmt.Println(obj.Search(".nti.nt..o.."))
-// }
+func main() {
+	obj := augustleetcodechallange.Constructor()
+	obj.AddWord("bca")
+	obj.AddWord("mno")
+	obj.AddWord("xyz")
+	fmt.Println(obj.Search("bca"))
+	fmt.Println(obj.Search("b.a"))
+	fmt.Println(obj.Search("x..z"))
+	fmt.Println(obj.Search("..p"))
+	fmt.Println(obj.Search("mno"))
+	obj.AddWord("ran")
+	obj.AddWord("rune")
+	obj.AddWord("runner")
+	// obj.AddWord("and")
+	// fmt.Println(obj.Search("a.d"))
+	fmt.Println(obj.Search("r.n"))
+}
 
 // func main() {
 // 	fmt.Println(pancakesorting.PancakeSort([]int{3, 2, 4, 1}))
