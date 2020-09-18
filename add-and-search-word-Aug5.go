@@ -2,8 +2,13 @@ package main
 
 import (
 	"fmt"
-	"solutions-in-golang/augustleetcodechallange"
+	"solutions-in-golang/septemberleetcodechallange"
 )
+
+// sep - 16
+func main() {
+	fmt.Println(septemberleetcodechallange.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8}))
+}
 
 // sep - 8
 // func main() {
@@ -54,23 +59,23 @@ import (
 // 	"solutions-in-golang/addandsearchword"
 // )
 
-func main() {
-	obj := augustleetcodechallange.Constructor()
-	obj.AddWord("bca")
-	obj.AddWord("mno")
-	obj.AddWord("xyz")
-	fmt.Println(obj.Search("bca"))
-	fmt.Println(obj.Search("b.a"))
-	fmt.Println(obj.Search("x..z"))
-	fmt.Println(obj.Search("..p"))
-	fmt.Println(obj.Search("mno"))
-	obj.AddWord("ran")
-	obj.AddWord("rune")
-	obj.AddWord("runner")
-	// obj.AddWord("and")
-	// fmt.Println(obj.Search("a.d"))
-	fmt.Println(obj.Search("r.n"))
-}
+// func main() {
+// 	obj := augustleetcodechallange.Constructor()
+// 	obj.AddWord("bca")
+// 	obj.AddWord("mno")
+// 	obj.AddWord("xyz")
+// 	fmt.Println(obj.Search("bca"))
+// 	fmt.Println(obj.Search("b.a"))
+// 	fmt.Println(obj.Search("x..z"))
+// 	fmt.Println(obj.Search("..p"))
+// 	fmt.Println(obj.Search("mno"))
+// 	obj.AddWord("ran")
+// 	obj.AddWord("rune")
+// 	obj.AddWord("runner")
+// 	// obj.AddWord("and")
+// 	// fmt.Println(obj.Search("a.d"))
+// 	fmt.Println(obj.Search("r.n"))
+// }
 
 // func main() {
 // 	fmt.Println(pancakesorting.PancakeSort([]int{3, 2, 4, 1}))
