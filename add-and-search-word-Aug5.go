@@ -2,13 +2,22 @@ package main
 
 import (
 	"fmt"
-	"solutions-in-golang/septemberleetcodechallange"
+	"solutions-in-golang/october"
 )
 
-// sep - 16
+//october1
 func main() {
-	fmt.Println(septemberleetcodechallange.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8}))
+	obj := october.Constructor1()
+	fmt.Println(obj.Ping(1))
+	fmt.Println(obj.Ping(100))
+	fmt.Println(obj.Ping(3001))
+	fmt.Println(obj.Ping(3001))
 }
+
+// sep - 16
+// func main() {
+// 	fmt.Println(septemberleetcodechallange.FindMaximumXOR([]int{3, 10, 5, 25, 2, 8}))
+// }
 
 // sep - 8
 // func main() {
