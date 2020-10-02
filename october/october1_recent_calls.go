@@ -1,22 +1,21 @@
 package october
 
 type RecentCounter struct {
-	pingTimerArr []int
+	times []int
 }
 
 func Constructor1() RecentCounter {
-	pingTimerArray := []int{}
-	return RecentCounter{pingTimerArray}
+	return RecentCounter{
+		times: make([]int, 0, 10000),
+	}
 }
 
-func (this *RecentCounter) Ping(t int) int {
-	result := 0
-	this.pingTimerArr = append(this.pingTimerArr, t)
-	lowLimit := t - 3000
-	for i := 0; i < len(this.pingTimerArr); i++ {
-		if this.pingTimerArr[i] >= lowLimit {
-			result++
-		}
+func (rc *RecentCounter) Ping(t int) int {
+	rc.times = append(rc.times, t)
+
+	for len(rc.times) > 0 && rc.times[0]+3000 < t {
+		rc.times = rc.times[1:]
 	}
-	return result
+
+	return len(rc.times)
 }

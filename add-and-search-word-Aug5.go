@@ -8,10 +8,10 @@ import (
 //october1
 func main() {
 	obj := october.Constructor1()
-	fmt.Println(obj.Ping(1))
+	fmt.Println(obj.Ping(4))
 	fmt.Println(obj.Ping(100))
 	fmt.Println(obj.Ping(3001))
-	fmt.Println(obj.Ping(3001))
+	fmt.Println(obj.Ping(3006))
 }
 
 // sep - 16
